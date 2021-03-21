@@ -1,7 +1,7 @@
 # Tor Browser
 _tor-browser_
 
-This is a container for the `tor-browser` firefox and tor browser bundle - en-US [x64]
+This is a container for the `tor-browser` firefox and tor browser bundle - en-US [x86]
 
 It's based on [desktopcontainers/base-debian](https://github.com/DesktopContainers/base-debian)
 
