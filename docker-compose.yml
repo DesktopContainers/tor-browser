@@ -5,6 +5,7 @@ services:
     build: .
     image: desktopcontainers/tor-browser
     restart: always
+    shm_size: "2g"
     environment:
       SERVER_NAME: localhost
 
