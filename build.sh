@@ -2,7 +2,8 @@
 
 IMG="desktopcontainers/tor-browser"
 
-PLATFORM="linux/amd64,linux/arm64,linux/arm/v7,linux/arm/v6"
+#PLATFORM="linux/amd64,linux/arm64,linux/arm/v7,linux/arm/v6"
+PLATFORM="linux/amd64"
 
 if [ -z ${DEBIAN_VERSION+x} ] || [ -z ${TOR_BROWSER_VERSION+x} ]; then
   docker-compose build -q --pull --no-cache
