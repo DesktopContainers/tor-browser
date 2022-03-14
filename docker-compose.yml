@@ -4,6 +4,7 @@ services:
   tor-browser:
     build: .
     image: desktopcontainers/tor-browser
+    network_mode: bridge
     restart: always
     shm_size: "2g"
     environment:
@@ -13,10 +14,10 @@ services:
 
       #ENABLE_SUDO: enable
       #ENABLE_KIOSK: enable
-    volumes:
-      - ./certs:/certs
+#    volumes:
+#      - ./certs:/certs
     ports:
-      - "2222:22"
-      - "8080:80"
-      - "4443:443"
-      - "5900:5900"
+      - "22"
+#      - "8080:80"
+#      - "4443:443"
+#      - "5900:5900"
